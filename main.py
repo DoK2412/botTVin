@@ -244,12 +244,12 @@ def statistic(message):
 def statistic_out(massage):
   try:
     if massage.text == password:
-      with open('loggins/info.log', 'r', encoding='utf-8') as info:
+      with open('/root/botTVin/loggins/info.log', 'r', encoding='utf-8') as info:
         statistics = info.read()
         bot.send_message(massage.from_user.id, statistics)
         past_days= str(date_of_creation - datetime.datetime.now()).split()[0]
       if abs(int(past_days)) % 7 == 0:
-        with open('loggins/info.log', 'w', encoding='utf-8') as info:
+        with open('/root/botTVin/loggins/info.log', 'w', encoding='utf-8') as info:
           info.write(f'Файл был очищен {datetime.datetime.now()}\n')
     else:
       bot.send_message(massage.from_user.id, 'Пароль не верен. В доступе отказано.')

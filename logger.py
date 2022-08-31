@@ -11,14 +11,14 @@ logger_config = {
     'handlers': {
         'error': {
             'class': 'logging.FileHandler',
-            'filename': '/botTVin/loggins/error.log',
+            'filename': '/root/botTVin/loggins/error.log',
             'mode': 'a',
             'level': 'ERROR',
             'formatter': 'formatting_errors'
             },
         'info': {
             'class': 'logging.FileHandler',
-            'filename': '/botTVin/loggins/info.log',
+            'filename': '/root/botTVin/loggins/info.log',
             'mode': 'a',
             'level': 'INFO',
             'formatter': 'formatting_info'
