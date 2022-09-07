@@ -72,7 +72,7 @@ def television(message):
                                            " и интерактивное TV.\n    Подберем телевидение под Ваш"
                                            " вкус каналов и желаемому месту установки.\n    Так же"
                                            " настроим ранее установленные комплекты, настроим "
-                                           "комплекты по специальному прибору.\n    Поможем рабобраться"
+                                           "комплекты по специальному прибору.\n    Поможем разобраться"
                                            " с надписью 'Нет сигнала' и перебоями (квадратиками) при"
                                            " просмотре.", reply_markup=keyboar)
 
@@ -224,7 +224,7 @@ def television(message):
 
     bot.send_message(message.from_user.id, "'О нас'\n\n     "
                                            "Артур\n\n      +79778173256\n\n      "
-                                           "Николай\n\n      +79990041293.", reply_markup=keyboar)
+                                           "Николай\n\n      +79990041293", reply_markup=keyboar)
     # bot.send_message(message.from_user.id, "+79778173256")
     # bot.send_message(message.from_user.id, "Николай, reply_markup=keyboar)")
     # bot.send_message(message.from_user.id, "+79778173256")
